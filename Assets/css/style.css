@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins" sans-serif;
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    
+    padding-left: 11%;
+    padding-right: 8%;
+    position: relative;
+
+    background-image: url(/Assets/images/car.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 2% 30%;
+}
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 22px;
+    border: 1px solid #727481;
+    border-radius: 55px;
+}
+.top-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.top-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 19px;
+    transform: scale(1.1);
+    transition: 0.2s all linear;
+}
+.top-nav ul li a:hover {
+    background: #e7eaeb;
+    border-radius: 0 2rem;
+    color: #000;
+    
+}
+.top-nav button {
+    background: #9c989a;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 15px 40px;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.top-nav button:hover {
+    background: #fbfcfc;
+    color: #000;
+}
+.side-nav {
+    position: fixed;
+    background: #9b9b9b;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background: linear-gradient(#2a2929, #1c1b1b, #787a7e, #ebdede);
+    background-size: 100% 500%;
+    background-position: 0 40%;
+    
+}
+.side-nav:hover {
+    animation: backcolor 20s linear infinite reverse;
+}
+@keyframes backcolor {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 0 400%;
+    }
+}
+.side-nav .logo {
+    width: 60px;
+    cursor: pointer;
+}
+.side-nav a {
+    text-decoration: none;
+    color: #fff;
+    transform: rotate(-90deg) translateX(50%);
+    width: max-content;
+}
+.text-box {
+    margin-top: 10%;
+    font-size: 18px;
+    color: #fff;
+}
+.text-box h1 {
+    font-weight: 500;
+    font-size: 86px;
+    max-width: 550px;
+    line-height: 95px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text-box h1 span {
+    color: #2a2929;
+}
+.text-box .icon {
+    background: #2a2929;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-box .icon img {
+    width: 12px;
+    
+}
